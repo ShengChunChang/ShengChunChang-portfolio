@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sheng-Chun Chang – CAD Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
+    }
+    header {
+      background: white;
+      padding: 16px 8%;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      margin-right: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .section {
+      padding: 48px 8%;
+      background: white;
+      margin-bottom: 16px;
+    }
+    h1, h2 { margin-top: 0; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+    }
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+    .project-card-content { padding: 16px; }
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+    .skills-list {
+      columns: 2;
+      max-width: 600px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 6px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="section">
+  <h1>Sheng-Chun Chang</h1>
+  <p>
+    Mechanical engineering student focusing on CAD, lightweight structures,
+    and rapid prototyping. I enjoy turning ideas into models that can be built
+    and tested in the real world.
+  </p>
+  <a class="button" href="#projects">View my projects</a>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="images/quadcopter-frame.jpg" alt="Quadcopter frame render">
+      <div class="project-card-content">
+        <h3>Quadcopter Frame Redesign</h3>
+        <p>
+          Redesigned a quadcopter arm and center frame for 3D printing.
+          Used parametric modeling and basic stress analysis to reduce mass
+          while keeping stiffness.
+        </p>
+        <div>
+          <span class="tag">Fusion 360</span>
+          <span class="tag">FEA</span>
+          <span class="tag">3D printing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/gearbox-housing.jpg" alt="Gearbox housing render">
+      <div class="project-card-content">
+        <h3>Gearbox Housing for CNC</h3>
+        <p>
+          Designed a compact gearbox housing with draft and fillets suitable
+          for CNC machining. Checked clearances for all shafts and bearings.
+        </p>
+        <div>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Assembly</span>
+          <span class="tag">Manufacturing</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <p>Fusion 360</p>
+    <p>SolidWorks</p>
+    <p>Onshape</p>
+    <p>Basic FEA and motion study</p>
+    <p>3D printing (FDM)</p>
+    <p>Laser cutting and basic machining</p>
+    <p>MATLAB and Python for calculations</p>
+  </div>
+  <a class="button" href="Your_Resume.pdf" target="_blank">Download resume</a>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: yourname@cornell.edu</p>
+  <p>LinkedIn:
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+      linkedin.com/in/yourprofile
+    </a>
+  </p>
+  <p>GitHub:
+    <a href="https://github.com/ShengChunChang" target="_blank">
+      github.com/ShengChunChang
+    </a>
+  </p>
+</section>
+
+</body>
+</html>
